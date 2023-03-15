@@ -11,10 +11,9 @@ return (
 <img src={starimage} className="star-image"/>
 <span>{props.rating}</span>
 <span>({props.round})</span>
-<span>{props.country}</span>
 </div>
-<p >{props.title}</p>
-<p>From <strong> {props.price}</strong>/person</p>
+<p ><strong>{props.title}</strong></p>
+<p>From <strong> {props.price}</strong>/piece</p>
 </div>
 </>
 )
