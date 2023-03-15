@@ -1,23 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
+import Card from './components/Card';
 
-function App() {
+function  App() {
+  var data;
+    fetch('https://fakestoreapi.com/products?limit=5')
+  .then(res=>res.json())
+  .then(json=>console.log(data=json));
+ 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Card img={require("./images/image.jpg")} rating="5" round="6" country="usa" title="jonh wick " price="250"/>
     </div>
   );
 }

@@ -1,7 +1,12 @@
 .App {
   text-align: center;
 }
-
+*
+{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +40,40 @@
   to {
     transform: rotate(360deg);
   }
+}
+body{
+  background-color: gray;
+}
+.card
+{
+height: 300px;
+width: 120px;
+margin-left:10px;
+margin-top:10px;
+background-color: white;
+border-radius: .5rem ;
+}
+.main-image
+{
+  height: 170px;
+  width: 120px;
+  border-radius: .5rem;
+}
+.star-image
+{
+  height: 30px;
+  width: 30px;
+  margin: 0;
+}
+span{
+  position:relative;
+  top:-8px;
+}
+p{
+margin: 0px;
+font-size: .9rem;
+}
+.card-status
+{
+  color: gray;
 }
