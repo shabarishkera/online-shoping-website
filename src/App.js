@@ -1,16 +1,29 @@
 import logo from './logo.svg';
 import './App.css';
 import Card from './components/Card';
+import { useEffect, useState } from 'react';
 
 function  App() {
-  var data;
-    fetch('https://fakestoreapi.com/products?limit=5')
-  .then(res=>res.json())
-  .then(json=>console.log(data=json));
- 
+  
+  const [data,setdata]=useState([]);
+  const  fetchdata= async()=>{
+   const responce= await fetch("https://fakestoreapi.com/products?limit=15");
+   const dat=await responce.json();
+   setdata(dat);
+
+  };
+  useEffect(()=>{fetchdata();},[]);
+  console.log(data[0]);
   return (
     <div className="App">
-    <Card img={require("./images/image.jpg")} rating="5" round="6" country="usa" title="jonh wick " price="250"/>
+      <div  className='card-container'>
+ { data&&data.map((item)=>{
+return (
+ <Card img={item.image} rating={item.rating.rate} round={item.rating.count} title={item.title} price={item.price} key={item.id}/>);
+ })
+}
+
+    </div>
     </div>
   );
 }
