@@ -42,7 +42,7 @@
   }
 }
 body{
-  background-color: gray;
+  background-color:white;
 }
 .card
 {
@@ -81,6 +81,7 @@ font-size: .9rem;
 {
 display:flex;
 flex-wrap: wrap;
+
 }
 .App
 {
@@ -90,45 +91,15 @@ display:flex;
 justify-content: center;
 
 }
-
-.nav-container
+.navbar
 {
-height:100vh;
-background-color: bisque;
-width: 150px;
-text-decoration: none;
-color: white;
-position: absolute;
-top:0;
-
+  display:block;
+  width:100%;
+  height:auto;
 }
-ul{
-height: inherit;
-margin: 0;
-display: inline;
-}
-li{
-list-style-type: none;
-color: white;
-display:block;
-height: 30px;
-margin-top: 20px;
-
-}
-li a{
-  text-decoration: none;
-  color:white;
-  font-weight: bolder;
-}
-li:focus,li:hover,a:hover
+.spinner
 {
-background-color:wheat;
-color:gray;
-
-}
-.navbar-container
-{
-  display: inline;
-  position: absolute;
-left:0;
+display:flex;
+width:100%;
+justify-content: center;
 }
