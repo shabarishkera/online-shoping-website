@@ -51,7 +51,8 @@ width: 190px;
 margin-left:10px;
 margin-top:10px;
 background-color: white;
-border-radius: .5rem ;
+border-radius: .5rem .5rem 0  0 ;
+box-shadow: .5px .5px 3px black;
 }
 .main-image
 {
@@ -63,11 +64,12 @@ border-radius: .5rem ;
 {
   height: 30px;
   width: 30px;
-  margin: 0;
+  position: relative;
+  
 }
 span{
   position:relative;
-  top:-8px;
+
 }
 p{
 margin: 0px;
@@ -81,7 +83,7 @@ font-size: .9rem;
 {
 display:flex;
 flex-wrap: wrap;
-
+justify-content: center;
 }
 .App
 {
@@ -102,4 +104,8 @@ justify-content: center;
 display:flex;
 width:100%;
 justify-content: center;
+}
+.main{
+  display: inline-block;
+ text-align: center;
 }

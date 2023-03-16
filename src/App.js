@@ -6,7 +6,7 @@ function  App() {
   
  
   return (
-    <div className="">
+    <div className="main">
      
       <Navbar />
   <Cardblock url="https://fakestoreapi.com/products?limit=15"/>
