@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Card from './components/Card';
 import { useEffect, useState } from 'react';
+import Navbar from './components/Navbar';
 
 function  App() {
   
@@ -16,6 +17,9 @@ function  App() {
   console.log(data[0]);
   return (
     <div className="App">
+      <div className='navbar-container'>
+      <Navbar />
+      </div>
       <div  className='card-container'>
  { data&&data.map((item)=>{
 return (

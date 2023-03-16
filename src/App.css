@@ -79,7 +79,7 @@ font-size: .9rem;
 }
 .card-container
 {
-display: flex;
+display:flex;
 flex-wrap: wrap;
 }
 .App
@@ -89,4 +89,46 @@ width: 100%;
 display:flex;
 justify-content: center;
 
+}
+
+.nav-container
+{
+height:100vh;
+background-color: bisque;
+width: 150px;
+text-decoration: none;
+color: white;
+position: absolute;
+top:0;
+
+}
+ul{
+height: inherit;
+margin: 0;
+display: inline;
+}
+li{
+list-style-type: none;
+color: white;
+display:block;
+height: 30px;
+margin-top: 20px;
+
+}
+li a{
+  text-decoration: none;
+  color:white;
+  font-weight: bolder;
+}
+li:focus,li:hover,a:hover
+{
+background-color:wheat;
+color:gray;
+
+}
+.navbar-container
+{
+  display: inline;
+  position: absolute;
+left:0;
 }
