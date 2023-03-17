@@ -101,11 +101,24 @@ justify-content: center;
 }
 .spinner
 {
-display:flex;
+display:block;
 width:100%;
 justify-content: center;
 }
 .main{
-  display: inline-block;
+
  text-align: center;
+}
+
+.carousel-item 
+{
+height:500px;
+width:auto;
+text-align: center;
+}
+.carousel-inner
+{
+display: flex;
+justify-content: center;
+
 }

@@ -3,6 +3,7 @@ import Card  from './Card';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import Spinner from './spinner';
+import DealoftTheDay from './DealoftTheDay';
 export default function Cardblock(props) {
     const [data,setdata]=useState([]);
     const[loading,isloading]=useState(true);
@@ -16,8 +17,11 @@ export default function Cardblock(props) {
     useEffect(()=>{fetchdata();},[]);
     console.log(data[0]);
   return (
+    <>
+    {data.length>=3?<DealoftTheDay data={data} />:null}  
     <div  className='card-container'>
       {loading&&<Spinner /> }
+         
            { data&&data.map((item)=>{
    return (
     <Card img={item.image} rating={item.rating.rate} round={item.rating.count} title={item.title} price={item.price} key={item.id}/>);
@@ -25,5 +29,6 @@ export default function Cardblock(props) {
    }
    
        </div>
+       </>
   )
 }

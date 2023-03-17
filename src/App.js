@@ -9,8 +9,10 @@ function  App() {
     <div className="main">
      
       <Navbar />
+      <div className='cardblock-wrapper'>
   <Cardblock url="https://fakestoreapi.com/products?limit=15"/>
      
+    </div>
     </div>
   );
 }
