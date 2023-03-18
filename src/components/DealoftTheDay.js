@@ -11,7 +11,7 @@ export default function DealoftTheDay(props) {
   </ol>
   <div className="carousel-inner">
     <div className="carousel-item active">
-      <img className="d-block w-100" src={data[0].image}alt="First slide"/>
+      <img className="d-block w-100 img-fluid" src={data[0].image}alt="First slide"/>
       <div className="carousel-caption d-none d-md-block">
     <h5>{data[0].title}</h5>
     <p>From {data[0].price}</p>
