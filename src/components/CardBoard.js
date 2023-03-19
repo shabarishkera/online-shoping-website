@@ -2,7 +2,6 @@ import React from 'react'
 import Card from './Card';
 import { useEffect } from 'react';
 import { useState } from 'react';
-import Spinner from './spinner';
 import DealoftTheDay from './DealoftTheDay';
 export default function Cardblock(props) {
   const [data, setdata] = useState([]);
