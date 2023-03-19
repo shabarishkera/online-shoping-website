@@ -13,7 +13,7 @@ export default function Cardblock(props) {
     isloading(false);
 
   };
-  useEffect(() => { fetchdata(); }, []);
+  useEffect(() => {  fetchdata(); }, []);
   console.log(data[0]);
   return (
     <>

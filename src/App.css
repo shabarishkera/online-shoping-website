@@ -133,3 +133,7 @@ img
   display:flex;
  justify-content: center;
 }
+.spinner-border
+{
+  margin-top: 40vh;
+}
