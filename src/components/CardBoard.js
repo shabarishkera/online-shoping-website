@@ -14,7 +14,7 @@ export default function Cardblock(props) {
 
   };
   useEffect(() => {  fetchdata(); }, []);
-  console.log(data[0]);
+  console.log(data);
   return (
     <>
       {data.length >= 3 ? <DealoftTheDay data={data} /> : null}
